@@ -1,0 +1,39 @@
+[default]
+
+
+[c]
+bears = ClangComplexityBear, GNUIndentBear, CSecurityBear
+files = **.h
+
+[c#]
+bears = CSharpLintBear
+files = **.cs
+
+[c++]
+bears = CPPCheckBear, CPPCleanBear, GNUIndentBear, ClangComplexityBear
+files = **.cpp, **.h
+
+[links]
+bears = InvalidLinkBear
+files = **.json, **.h, **.xaml, **.cs, **.py, **.cpp, **.yml, **.md
+ignore = 
+
+[xml]
+bears = XMLBear
+files = **.xaml
+
+[json]
+bears = JSONFormatBear
+files = **.json
+
+[python]
+bears = PycodestyleBear
+files = **.py
+
+[markdown]
+bears = MarkdownBear
+files = **.md
+
+[yaml]
+bears = LineLengthBear, YAMLLintBear
+files = **.yml
