@@ -5,17 +5,13 @@
 bears = ClangComplexityBear, GNUIndentBear, CSecurityBear
 files = **.h
 
-[c#]
-bears = CSharpLintBear
-files = **.cs
-
 [c++]
 bears = CPPCheckBear, CPPCleanBear, GNUIndentBear, ClangComplexityBear
 files = **.cpp, **.h
 
 [links]
 bears = InvalidLinkBear
-files = **.json, **.h, **.xaml, **.cs, **.py, **.cpp, **.yml, **.md
+files = **.json, **.h, **.cs, **.py, **.cpp, **.yml, **.md
 ignore = 
 
 [xml]
