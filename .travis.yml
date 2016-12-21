@@ -1,26 +1,3 @@
 language: generic
 services: docker
-script:
-  - touch .gitignore
-  - >
-    docker run --volume=$(pwd):/app --workdir=/app coala/base:pre /bin/bash -c
-    "
-    coala-quickstart --ci;
-    yes 0 | coala --apply-patches --no-orig >/dev/null; 2>/dev/null;
-    coala --ci >coala-ci.log 2>coala-ci-err.log
-    "
-  - git add --all
-  # Create two diff files, and upload to https://clbin.com
-  - >
-    git diff --cached --find-renames
-      --ignore-all-space --ignore-blank-lines
-      > sans-whitespace.diff
-  - cat sans-whitespace.diff | curl -F 'clbin=<-' https://clbin.com
-  - git diff --cached --find-renames > with-whitespace.diff
-  - cat with-whitespace.diff | curl -F 'clbin=<-' https://clbin.com
-  # Show the generated .coafile
-  - cat .coafile
-  # Upload logs to https://clbin.com
-  - cat coala-ci.log | curl -F 'clbin=<-' https://clbin.com
-  - cat coala-ci-err.log | curl -F 'clbin=<-' https://clbin.com
-  
+script: docker run --volume=$(pwd):/app --workdir=/app coala/base coala-ci
