@@ -10,7 +10,6 @@ indent_size = 4
 braces_on_func_def_line = True
 delete_optional_blank_lines = True
 max_line_length = 79
-use_spaces = False
 
 [c++]
 bears = CPPCheckBear, CPPCleanBear, GNUIndentBear, ClangComplexityBear
