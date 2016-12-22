@@ -5,18 +5,19 @@
 bears = ClangComplexityBear, GNUIndentBear, CSecurityBear
 files = **.h
 
-brace_indent = 4
+brace_indent = 0
 indent_size = 4
 braces_on_func_def_line = True
 delete_optional_blank_lines = True
 max_line_length = 79
+use_spaces = False
 
 [c++]
 bears = CPPCheckBear, CPPCleanBear, GNUIndentBear, ClangComplexityBear
 files = **.cpp, **.h
 
 max_line_length = 79
-brace_indent = 4
+brace_indent = 0
 indent_size = 4
 use_spaces = False
 
