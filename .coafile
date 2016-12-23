@@ -20,28 +20,3 @@ max_line_length = 79
 brace_indent = 0
 indent_size = 4
 use_spaces = False
-
-[links]
-bears = InvalidLinkBear
-files = **.json, **.h, **.cs, **.py, **.cpp, **.yml, **.md
-ignore = 
-
-[xml]
-bears = XMLBear
-files = **.xaml
-
-[json]
-bears = JSONFormatBear
-files = **.json
-
-[python]
-bears = PycodestyleBear
-files = **.py
-
-[markdown]
-bears = MarkdownBear
-files = **.md
-
-[yaml]
-bears = LineLengthBear, YAMLLintBear
-files = **.yml
