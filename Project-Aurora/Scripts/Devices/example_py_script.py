@@ -60,8 +60,9 @@ class main():
         # NOTE: Do not have any logging during color set for performance
         #       reasons. Only use logging for debugging
         if not self.CompareColors(color, self.device_color) or forced:
-            Global.logger.LogLine("[PY Script] Sent a color, "
-                + str(color) + " to the device")            
+            Global.logger.LogLine(
+                "[PY Script] Sent a color, " + str(color) + " to the device"
+            )
 
             # Update device color locally
             self.device_color = color
