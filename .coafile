@@ -1,6 +1,5 @@
 [default]
 
-
 [c]
 bears = ClangComplexityBear, CSecurityBear
 files = **.h
@@ -21,10 +20,6 @@ brace_indent = 0
 indent_size = 4
 delete_optional_blank_lines = True
 use_spaces = False
-
-[c#]
-bears = CSharpLintBear
-files = **.cs
 
 [links]
 bears = InvalidLinkBear
