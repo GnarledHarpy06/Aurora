@@ -24,15 +24,11 @@ use_spaces = False
 [links]
 bears = InvalidLinkBear
 files = **.json, **.h, **.xaml, **.cs, **.py, **.cpp, **.yml, **.md
-link_ignore_regex = (xaml|clbin.com|127.0.0.1)
+link_ignore_regex = (xaml|clbin.com|127.0.0.1|details.aspx?id=48145)
 
 [xml]
 bears = XMLBear
 files = **.xaml
-
-[json]
-bears = JSONFormatBear
-files = **.json
 
 [python]
 bears = PycodestyleBear
