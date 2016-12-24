@@ -63,14 +63,14 @@ bool WriteToPipe(unsigned char bitmap[], std::string command_cargo)
 		//Try to gestore handle
 		//Connect to the server pipe using CreateFile()
 		hPipe = CreateFile(
-			PIPE_NAME,   // pipe name 
-			GENERIC_READ |  // read and write access 
+			PIPE_NAME,		// pipe name 
+			GENERIC_READ |	// read and write access 
 			GENERIC_WRITE,
-			0,              // no sharing 
-			NULL,           // default security attributes
-			OPEN_EXISTING,  // opens existing pipe 
-			0,              // default attributes 
-			NULL);          // no template file 
+			0,				// no sharing 
+			NULL,			// default security attributes
+			OPEN_EXISTING,	// opens existing pipe 
+			0,				// default attributes 
+			NULL);		// no template file 
 
 		if (INVALID_HANDLE_VALUE == hPipe)
 		{
@@ -80,12 +80,11 @@ bool WriteToPipe(unsigned char bitmap[], std::string command_cargo)
 
 	DWORD cbBytes;
 
-	BOOL bResult = WriteFile(
-		hPipe,                // handle to pipe 
-		ss.str().c_str(),             // buffer to write from 
-		strlen(ss.str().c_str()),   // number of bytes to write, include the NULL
-		&cbBytes,             // number of bytes written 
-		NULL);                // not overlapped I/O 
+	BOOL bResult = WriteFile( hPipe,					// handle to pipe
+							  ss.str().c_str(),			// buffer to write from
+							  strlen(ss.str().c_str()),	// number of bytes to write, include the NULL
+							  &cbBytes,					// number of bytes written 
+							  NULL);					// not overlapped I/O 
 
 	if ((!bResult) || (strlen(ss.str().c_str()) != cbBytes))
 	{
@@ -123,14 +122,14 @@ bool LogiLedInit()
 
 		//Connect to the server pipe using CreateFile()
 		hPipe = CreateFile(
-			PIPE_NAME,   // pipe name 
-			GENERIC_READ |  // read and write access 
+			PIPE_NAME,		// pipe name 
+			GENERIC_READ |	// read and write access 
 			GENERIC_WRITE,
-			0,              // no sharing 
-			NULL,           // default security attributes
-			OPEN_EXISTING,  // opens existing pipe 
-			0,              // default attributes 
-			NULL);          // no template file 
+			0,				// no sharing 
+			NULL,			// default security attributes
+			OPEN_EXISTING,	// opens existing pipe 
+			0,				// default attributes 
+			NULL);			// no template file 
 
 		if (INVALID_HANDLE_VALUE == hPipe)
 		{
@@ -156,7 +155,11 @@ int LogiLedGetCurrentBrightnessPercentage(int deviceType)
 		return 100;
 }
 
-bool LogiLedSetLighting(int deviceType, int redPercentage, int greenPercentage, int bluePercentage, int brightnessPercentage)
+bool LogiLedSetLighting(int deviceType,
+						int redPercentage,
+						int greenPercentage,
+						int bluePercentage,
+						int brightnessPercentage)
 {
 	unsigned char redValue = (unsigned char)((redPercentage / 100.0f) * 255);
 	unsigned char greenValue = (unsigned char)((greenPercentage / 100.0f) * 255);
@@ -190,7 +193,12 @@ bool LogiLedRestoreLighting()
 	return isInitialized;
 }
 
-bool LogiLedFlashLighting(int deviceType, int redPercentage, int greenPercentage, int bluePercentage, int milliSecondsDuration, int milliSecondsInterval)
+bool LogiLedFlashLighting(int deviceType,
+						  int redPercentage,
+						  int greenPercentage,
+						  int bluePercentage,
+						  int milliSecondsDuration,
+						  int milliSecondsInterval)
 {
 	if (deviceType == LOGITECH_LED_KEYBOARD || deviceType == LOGITECH_LED_ALL)
 	{
@@ -216,7 +224,12 @@ bool LogiLedFlashLighting(int deviceType, int redPercentage, int greenPercentage
 	return isInitialized;
 }
 
-bool LogiLedPulseLighting(int deviceType, int redPercentage, int greenPercentage, int bluePercentage, int milliSecondsDuration, int milliSecondsInterval)
+bool LogiLedPulseLighting(int deviceType,
+						  int redPercentage,
+						  int greenPercentage,
+						  int bluePercentage,
+						  int milliSecondsDuration,
+						  int milliSecondsInterval)
 {
 	if (deviceType == LOGITECH_LED_KEYBOARD || deviceType == LOGITECH_LED_ALL)
 	{

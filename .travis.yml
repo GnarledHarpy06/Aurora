@@ -11,13 +11,7 @@ script:
     
     # Show the generated .coafile
     - cat .coafile
-    - git add --all      
-    
-    # Create two diff files, and upload to https://clbin.com
-    - git diff --cached --find-renames --ignore-all-space --ignore-blank-lines > sans-whitespace.diff
-    - cat sans-whitespace.diff | curl -F 'clbin=<-' https://clbin.com
-    - git diff --cached --find-renames > with-whitespace.diff
-    - cat with-whitespace.diff | curl -F 'clbin=<-' https://clbin.com    
+    - git add --all
     
     # Upload logs to https://clbin.com
     - cat coala-ci.log | curl -F 'clbin=<-' https://clbin.com

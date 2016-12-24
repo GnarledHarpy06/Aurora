@@ -19,9 +19,9 @@
 #define LOGI_DEVICETYPE_RGB_ORD         1
 #define LOGI_DEVICETYPE_PERKEY_RGB_ORD  2
 
-#define LOGI_DEVICETYPE_MONOCHROME  (1 << LOGI_DEVICETYPE_MONOCHROME_ORD)
-#define LOGI_DEVICETYPE_RGB         (1 << LOGI_DEVICETYPE_RGB_ORD)
-#define LOGI_DEVICETYPE_PERKEY_RGB  (1 << LOGI_DEVICETYPE_PERKEY_RGB_ORD)
+#define LOGI_DEVICETYPE_MONOCHROME	(1 << LOGI_DEVICETYPE_MONOCHROME_ORD)
+#define LOGI_DEVICETYPE_RGB			(1 << LOGI_DEVICETYPE_RGB_ORD)
+#define LOGI_DEVICETYPE_PERKEY_RGB	(1 << LOGI_DEVICETYPE_PERKEY_RGB_ORD)
 
 const int LOGITECH_LED_MOUSE = 0x0001;
 const int LOGITECH_LED_KEYBOARD = 0x0002;
@@ -31,10 +31,8 @@ const int LOGITECH_LED_ALL = LOGITECH_LED_MOUSE | LOGITECH_LED_KEYBOARD;
 #define LOGI_DEVICETYPE_ALL (LOGI_DEVICETYPE_MONOCHROME | LOGI_DEVICETYPE_RGB | LOGI_DEVICETYPE_PERKEY_RGB)
 
 
-namespace LogiLed
-{
-	typedef enum
-	{
+namespace LogiLed {
+	typedef enum {
 		ESC = 0x01,
 		F1 = 0x3b,
 		F2 = 0x3c,
@@ -140,10 +138,9 @@ namespace LogiLed
 		NUM_ZERO = 0x52,
 		NUM_PERIOD = 0x53,
 
-	}KeyName;
+	} KeyName;
 
-	typedef enum
-	{
+	typedef enum {
 		UNKNOWN = -1,
 		BITLOC_ESC = 0,
 		BITLOC_F1 = 4,
@@ -276,5 +273,5 @@ namespace LogiLed
 		BITLOC_NUM_ZERO = 492,
 		BITLOC_NUM_PERIOD = 496,
 		//500
-	}Logitech_keyboardBitmapKeys;
+	} Logitech_keyboardBitmapKeys;
 }

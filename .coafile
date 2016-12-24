@@ -2,7 +2,7 @@
 
 
 [c]
-bears = ClangComplexityBear, GNUIndentBear, CSecurityBear
+bears = ClangComplexityBear, CSecurityBear
 files = **.h
 
 brace_indent = 0
@@ -13,7 +13,7 @@ max_line_length = 79
 use_spaces = False
 
 [c++]
-bears = CPPCheckBear, CPPCleanBear, GNUIndentBear, ClangComplexityBear
+bears = CPPCheckBear, ClangComplexityBear
 files = **.cpp
 
 max_line_length = 79
