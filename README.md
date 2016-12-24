@@ -195,13 +195,16 @@ The Talos Principle features
 
    A: You can make suggestions by posting an issue [here](https://github.com/antonpup/Aurora/issues), outlining what you would like to request, and I will look over it.
    
+   
 * Q: Some keys in the program state that they are not supported. What does this mean?
 
    A: It means that changes to those keys are not currently possible. This is present on Logitech keyboards with G-keys and logo. We do keep up contact with Logitech SDK guys to help us.
    
+   
 * Q: Aurora is constantly crashing! Help!
 
    A: You can report crashes and other issues on [Github](https://github.com/antonpup/Aurora/issues). Please include a brief explanation of how to reproduce the crash and include the most recent log file. Log files can be located in the "*Aurora Location*/logs" directory.
+   
    
 * Q: I have found a bug. How do I report it?
 
