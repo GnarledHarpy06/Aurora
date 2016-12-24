@@ -10,7 +10,7 @@ script:
     "
   # Show the generated .coafile
   - cat .coafile
-    
+
   # Upload logs to https://clbin.com
   - cat coala-ci.log | curl -F 'clbin=<-' https://clbin.com
   - cat coala-ci-err.log | curl -F 'clbin=<-' https://clbin.com
