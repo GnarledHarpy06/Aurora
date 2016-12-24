@@ -1,17 +1,18 @@
 language: generic
 services: docker
-script:
-- touch .gitignore
-- > docker run --volume=$(pwd):/app --workdir=/app coala/base:pre /bin/bash -c
-"
-yes 0 | coala --apply-patches --no-orig >/dev/null 2>/dev/null;
-coala --ci >coala-ci.log 2>coala-ci-err.log
-"
-
-# Show the generated .coafile
-- cat .coafile
-- git add --all
-
-# Upload logs to https://clbin.com
-- cat coala-ci.log | curl -F 'clbin=<-' https://clbin.com
-- cat coala-ci-err.log | curl -F 'clbin=<-' https://clbin.com
+script: - touch .gitignore
+        - > 
+        docker run --volume=$(pwd):/app --workdir=/app coala/base:pre 
+        /bin/bash -c
+        "
+        yes 0 | coala --apply-patches --no-orig >/dev/null 2>/dev/null;
+        coala --ci >coala-ci.log 2>coala-ci-err.log
+        "
+        
+        # Show the generated .coafile
+        - cat .coafile
+        - git add --all
+        
+        # Upload logs to https://clbin.com
+        - cat coala-ci.log | curl -F 'clbin=<-' https://clbin.com
+        - cat coala-ci-err.log | curl -F 'clbin=<-' https://clbin.com
