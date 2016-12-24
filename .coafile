@@ -21,3 +21,32 @@ brace_indent = 0
 indent_size = 4
 delete_optional_blank_lines = True
 use_spaces = False
+
+[c#]
+bears = CSharpLintBear
+files = **.cs
+
+[links]
+bears = InvalidLinkBear
+files = **.json, **.h, **.xaml, **.cs, **.py, **.cpp, **.yml, **.md
+ignore = 
+
+[xml]
+bears = XMLBear
+files = **.xaml
+
+[json]
+bears = JSONFormatBear
+files = **.json
+
+[python]
+bears = PycodestyleBear
+files = **.py
+
+[markdown]
+bears = MarkdownBear
+files = **.md
+
+[yaml]
+bears = LineLengthBear, YAMLLintBear
+files = **.yml
