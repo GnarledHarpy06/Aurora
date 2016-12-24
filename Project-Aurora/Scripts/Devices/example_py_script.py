@@ -37,7 +37,7 @@ class main():
 
                 if kvp.Key == DeviceKeys.Peripheral:
                     # For example if we're basing our device color
-					# on Peripheral colors
+                    # on Peripheral colors
                     self.SendColorToDevice(kvp.Value, forced)
 
             return True
@@ -47,10 +47,8 @@ class main():
             return False
 
     def CompareColors(self, color1, color2):
-        if (color1.A == color2.A and
-            color1.R == color2.R and
-            color1.G == color2.G and
-            color1.B == color2.B):
+        if (color1.A == color2.A and color1.R == color2.R and
+                color1.G == color2.G and color1.B == color2.B):
             return True
         else:
             return False
@@ -58,12 +56,12 @@ class main():
     # Custom method to send the color to the device
     def SendColorToDevice(self, color, forced):
         # Check if device's current color is the same,
-		# no need to update if they are the same
+        # no need to update if they are the same
         if not self.CompareColors(color, self.device_color) or forced:
-            # NOTE: Do not have any logging during color set for performance reasons.
-			#       Only use logging for debugging
+            # NOTE: Do not have any logging during color set for performance
+            #       reasons. Only use logging for debugging
             Global.logger.LogLine("[PY Script] Sent a color, "
-				+ str(color) + " to the device")
+                + str(color) + " to the device")
 
             # Update device color locally
             self.device_color = color

@@ -28,11 +28,12 @@ class main():
                            DeviceKeys.I,
                            DeviceKeys.O,
                            DeviceKeys.P)))
+
     def UpdateLights(self, settings, state):
         layer = EffectLayer(self.ID)
         layer.PercentEffect(self.ForegroundColour,
                             self.BackgroundColour,
                             settings.Keys,
                             System.DateTime.Now.Second,
-                            60);
+                            60)
         return layer
