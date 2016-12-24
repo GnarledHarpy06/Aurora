@@ -1,19 +1,17 @@
 import clr
-
-clr.AddReference("Aurora")
-clr.AddReference("System.Drawing")
-
 from Aurora import Global
 from Aurora.Devices import DeviceKeys
 from System.Drawing import Color
 from System.Collections.Generic import Dictionary
 import System
-
 import sys
+
+clr.AddReference("Aurora")
+clr.AddReference("System.Drawing")
 
 class main():
     devicename = "Example Python Device Script"
-    enabled = False #Switch to True, to enable it in Aurora
+    enabled = False  #Switch to True, to enable it in Aurora
     device_color = Color.Black
     
     def Initialize(self):
