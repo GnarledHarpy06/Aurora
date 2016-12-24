@@ -14,9 +14,10 @@ use_spaces = False
 
 [c++]
 bears = CPPCheckBear, CPPCleanBear, GNUIndentBear, ClangComplexityBear
-files = **.cpp, **.h
+files = **.cpp
 
 max_line_length = 79
 brace_indent = 0
 indent_size = 4
+delete_optional_blank_lines = True
 use_spaces = False
