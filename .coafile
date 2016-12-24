@@ -24,7 +24,7 @@ use_spaces = False
 [links]
 bears = InvalidLinkBear
 files = **.json, **.h, **.xaml, **.cs, **.py, **.cpp, **.yml, **.md
-ignore = 
+link_ignore_regex = (xaml|clbin.com|127.0.0.1)
 
 [xml]
 bears = XMLBear
