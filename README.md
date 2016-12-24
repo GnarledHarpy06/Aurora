@@ -60,19 +60,19 @@ You can set Aurora to run on Windows Startup. Go into Settings and check "Start 
 ## Video demonstrations
 Dota 2 Demo
 
-[![Dota 2 Demo](http://img.youtube.com/vi/iqwYU-blkhk/0.jpg)](https://www.youtube.com/watch?v=iqwYU-blkhk)
+[![Dota 2 Demo](http://img.youtube.com/vi/jUCmuz6cBGA/0.jpg)](https://www.youtube.com/watch?v=jUCmuz6cBGA)
 
 Rocket League Demo
 
-[![Rocket League Demo](http://img.youtube.com/vi/XhXQt0LU520/0.jpg)](https://www.youtube.com/watch?v=XhXQt0LU520)
+[![Rocket League Demo](http://img.youtube.com/vi/Eb7ffID1ZCQ/0.jpg)](https://www.youtube.com/watch?v=Eb7ffID1ZCQ)
 
 Grand Theft Auto V Demo
 
-[![Grand Theft Auto V Demo](http://img.youtube.com/vi/irBmmA_ndPY/0.jpg)](https://www.youtube.com/watch?v=irBmmA_ndPY)
+[![Grand Theft Auto V Demo](http://img.youtube.com/vi/n_13FYqBu7w/0.jpg)](https://www.youtube.com/watch?v=n_13FYqBu7w)
 
 Robot Roller-Derby Disco Dodgeball Demo
 
-[![Robot Roller-Derby Disco Dodgeball Demo](http://img.youtube.com/vi/pxx3hqoPFD8/0.jpg)](https://www.youtube.com/watch?v=pxx3hqoPFD8)
+[![Robot Roller-Derby Disco Dodgeball Demo](http://img.youtube.com/vi/3PWnqrD2NUc/0.jpg)](https://www.youtube.com/watch?v=3PWnqrD2NUc)
 
 
 ## Screenshots
